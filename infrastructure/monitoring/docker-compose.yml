@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   prometheus:
-    container_name: coin_wallet_prometheus
+    container_name: app_wallet_prometheus
     image: prom/prometheus:v2.40.0
     ports:
       - "9090:9090"
@@ -24,4 +24,4 @@ services:
 
 networks:
   monitoring:
-    name: "coin_wallet_monitoring"
+    name: "app_wallet_monitoring"
